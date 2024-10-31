@@ -1,75 +1,33 @@
-# Nuxt Minimal Starter
+# تسک فراخوانی قیمت و نماد های ارزدیجیتال
+این تسک بسیار مختصر برای نمایش نماد های ارز دیجیتال هست به همراه یک پجینیشن که با جاوا اسکریپت ساخته شده برای انجام این تسک از متا فریمورک Nuxt.js استفاده شده است
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## دریافت سورس 
+ابتدا برای نصب سورس این تسک باید گیت روی سیستم شما نصب باشد سپس از طریق ادرس
+git@github.com:Alishirinipazy/digital-currency.git
+فایل پروژه را کلون کنید
 
-## Setup
+## نصب و راه اندازی سورس 
+ابتدا باید node.js را بر سیستم خود نصب کنید
 
-Make sure to install dependencies:
+(ترجیحا ورژن 18 به بالا)
 
+###نصب پکیج ها از طریق node.js
+
+برای نصب پیکج ها دستور زیر را در مسیر پروژه
+انجام دهید
 ```bash
 # npm
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## راه اندازی تسک
+برای راه اندازی دستور زیر را در مسیر اصلی پروژه انجام دهید بعد از راه اندازی پیکیچ ها آدرس 
+ `http://localhost:3000` نمایش داده میشود در مرورگر این آدرس را باز کنید :
 
 ```bash
 # npm
 npm run dev
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+تهیه شده با ❤️ عشق توسط علی شیرینی پزی

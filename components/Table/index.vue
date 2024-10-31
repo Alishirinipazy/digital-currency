@@ -41,7 +41,7 @@ const cryptoData = ref(null)
 const loading = ref(false)
 const intervalId = ref(null)
 const pageHandler = ref(null);
-
+const {public: {apiBase}} = useRuntimeConfig();
 
 router.push(`?id=1`);
 
@@ -59,7 +59,7 @@ function chunkArray(array, chunkSize) {
 const fetchData = async () => {
   loading.value = true
   try {
-    const response = await axios.get('https://api.coincap.io/v2/markets/')
+    const response = await axios.get(apiBase)
     cryptoData.value = chunkArray(response?.data?.data, 10)
     if (route.query.id === "1") {
       pageHandler.value = cryptoData.value[0]
@@ -74,12 +74,12 @@ const fetchData = async () => {
 // بارگذاری اولیه داده‌ها
 fetchData()
 
-// تنظیم بروزرسانی دوره‌ای
+
 onMounted(() => {
-  intervalId.value = setInterval(fetchData, 5000) // هر 10 ثانیه
+  intervalId.value = setInterval(fetchData, 10000)
 })
 
-// پاک کردن interval هنگام غیر فعال شدن کامپوننت
+
 onUnmounted(() => {
   clearInterval(intervalId.value)
 })
